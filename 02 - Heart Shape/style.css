@@ -12,6 +12,23 @@ body{
     width: 100px;
     position: relative;
     transform: rotate(-45deg);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(-45deg) scale(1);
+    }
+    50%
+    {   
+        transform: rotate(-45deg) scale(1.5);
+    }
+    100%
+    {   
+        transform: rotate(-45deg) scale(1);
+    }
 }
 
 .heart::after{
