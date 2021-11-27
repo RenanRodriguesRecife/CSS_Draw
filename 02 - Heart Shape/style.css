@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heart{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.heart::after{
+    background: inherit;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+
