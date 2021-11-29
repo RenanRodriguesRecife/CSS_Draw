@@ -32,7 +32,7 @@ body{
 }
 
 @keyframes loading {
-    0%{
+    0%, 100%{
         background-color:$clr-light;
         height:2rem;
     }
@@ -51,5 +51,11 @@ body{
     }
     90%{
         height:2rem;
+    }
+}
+
+@for $i from 1 through 5{
+    .loading__dot:nth-child(#{$i}){
+        animation-delay:#{$i*0.2}s;
     }
 }
