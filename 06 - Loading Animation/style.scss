@@ -25,10 +25,10 @@ body{
     height: 2rem;
     width: 2rem;
     border-radius: $radius;
-    background-color: red;
     display: inline-block;
     margin:0.5rem;
     animation: loading 6s $animation infinite;
+    vertical-align: middle;
 }
 
 @keyframes loading {
