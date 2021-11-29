@@ -14,6 +14,7 @@ body{
     width: 360px;
     height: 520px;
     overflow: hidden;
+    transform: scale(.8);
 }
 
 .netflix::before
@@ -57,4 +58,16 @@ body{
 .netflix span:nth-child(3){
     background: #b00612;
     right: 0;
+}
+h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
 }
