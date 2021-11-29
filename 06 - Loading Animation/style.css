@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading__dot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  background-color: red;
+  display: inline-block;
+  margin: 0.5rem;
+  -webkit-animation: loading 6s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+          animation: loading 6s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    background-color: #ffb300;
+    height: 2rem;
+  }
+  20% {
+    height: 10rem;
+  }
+  40% {
+    height: 2rem;
+  }
+  50% {
+    background-color: #d81b60;
+    height: 2rem;
+  }
+  70% {
+    height: 10rem;
+  }
+  90% {
+    height: 2rem;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-color: #ffb300;
+    height: 2rem;
+  }
+  20% {
+    height: 10rem;
+  }
+  40% {
+    height: 2rem;
+  }
+  50% {
+    background-color: #d81b60;
+    height: 2rem;
+  }
+  70% {
+    height: 10rem;
+  }
+  90% {
+    height: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
