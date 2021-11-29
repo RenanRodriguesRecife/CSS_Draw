@@ -1,13 +1,18 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(5,40,46,0);
+    background-color: black;
 }
 
 .circle{
+    margin-top: 10rem;
     position: relative;
     width: 300px;
     height: 300px;
@@ -29,9 +34,10 @@ body{
     position: absolute;
     top: 35px;
     bottom: 35px;
-    right:35px;
+    right: 35px;
     left: 35px;
-    background-color:rgba(5,40,46,0);
+    border-radius: 50%;
+    background-color:black;
 }
 .circle span{
     position: absolute;
