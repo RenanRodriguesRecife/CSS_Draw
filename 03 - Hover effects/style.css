@@ -30,7 +30,7 @@ body{
     overflow: hidden;
 }
 .row:nth-child(even){
-    margin-left: 10px;
+    margin-left: 1px;
 }
 .hexagon{
     position: relative;
