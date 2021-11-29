@@ -31,7 +31,7 @@ body {
 }
 
 @-webkit-keyframes loading {
-  0% {
+  0%, 100% {
     background-color: #ffb300;
     height: 2rem;
   }
@@ -54,7 +54,7 @@ body {
 }
 
 @keyframes loading {
-  0% {
+  0%, 100% {
     background-color: #ffb300;
     height: 2rem;
   }
@@ -74,5 +74,30 @@ body {
   90% {
     height: 2rem;
   }
+}
+
+.loading__dot:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loading__dot:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loading__dot:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.loading__dot:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.loading__dot:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 /*# sourceMappingURL=style.css.map */
