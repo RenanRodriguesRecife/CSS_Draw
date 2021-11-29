@@ -23,11 +23,11 @@ body {
   height: 2rem;
   width: 2rem;
   border-radius: 2rem;
-  background-color: red;
   display: inline-block;
   margin: 0.5rem;
   -webkit-animation: loading 6s cubic-bezier(0.76, 0, 0.24, 1) infinite;
           animation: loading 6s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  vertical-align: middle;
 }
 
 @-webkit-keyframes loading {
