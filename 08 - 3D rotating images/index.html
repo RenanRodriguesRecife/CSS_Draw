@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="mgs_audio" src="mgs.mp3" loop="loop"></audio>
     <div class="Box">
         <span style="--i:1"><img src="img/pic1.jpg" alt=""></span>
         <span style="--i:2"><img src="img/pic2.jpg" alt=""></span>
@@ -18,5 +19,12 @@
         <span style="--i:7"><img src="img/pic7.jpg" alt=""></span>
         <span style="--i:8"><img src="img/pic8.jpg" alt=""></span>
     </div>
+    <script>
+        window.onload = function() {
+        var audio = document.getElementById("mgs_audio")
+        audio.volume = 0.2;
+        audio.play();
+    }
+    </script>
 </body>
 </html>
