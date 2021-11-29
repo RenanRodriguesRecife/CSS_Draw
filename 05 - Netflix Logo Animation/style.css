@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: #000;
+    
 }
 
 .netflix
@@ -13,6 +15,7 @@ body{
     position: relative;
     width: 360px;
     height: 520px;
+    
     overflow: hidden;
     transform: scale(.8);
 }
@@ -31,6 +34,30 @@ body{
     border-top-right-radius: 100%;
     transform: scaleX(1.5);
 }
+.netflix::after,
+h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000,#000);
+    z-index: 3;
+    animation: animate 2s linear forwards  ;
+}
+
+@keyframes animate {
+    0%
+    {
+        right: 0;
+    } 
+    100%
+    {
+        right: -400%;
+    }
+    
+}
 
 .netflix span
 {
@@ -39,6 +66,7 @@ body{
     width: 120px;
     height: 100%;
     background: #FFF;
+    
 }
 
 .netflix span:nth-child(1){
@@ -69,5 +97,5 @@ h3{
     font-size: 60px;
     text-transform: uppercase;
     letter-spacing: 10px;
-
+    overflow: hidden;
 }
