@@ -42,3 +42,15 @@ body{
     text-shadow: 0 5px 15px rbga(0,0,0,0.25);
     transform: translate(-50%,-50%);
 }
+
+.container .box span i:nth-child(1)
+{
+    font-style: initial;
+    color: #ff246f;
+}
+
+.container .box span i:nth-child(2)
+{
+    font-style: initial;
+    color: #12b4ff;
+}
