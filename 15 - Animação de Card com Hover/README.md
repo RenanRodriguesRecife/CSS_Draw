@@ -1,0 +1,1 @@
+Criando um animação de Card com Hover e CSS puro - https://www.youtube.com/watch?v=FV4MlZPZ2SE&list=PLlAbYrWSYTiM5Sq4ONH2eqeNnhkZa-T5k
