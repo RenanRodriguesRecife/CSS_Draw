@@ -7,9 +7,57 @@
     <title>Document</title>
 </head>
 <style>
-  
+    *,
+    *:before,
+    *:after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #81ecec;
+    }
+    .menu{
+        background: #fff;
+        border-radius: 50%;
+        width:60px;
+        height: 60px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .hamburguer{
+        position: relative;
+        display: block;
+        background: #000;
+        width: 30px;
+        height: 2px; 
+        top: 29px;
+        left: 15px;
+        transform-origin: center;
+        transition: 5s ease-in-out;
+    }
+    .hamburguer:before,
+    .hamburguer:after{
+        background: #000;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .hamburguer:before{
+        top: -10px;
+    }
+    .hamburguer:after{
+        bottom: -10px;
+    }
 </style>
 <body>
-    
+    <div class="menu">
+        <span class="hamburguer"></span>
+    </div>
 </body>
 </html>
