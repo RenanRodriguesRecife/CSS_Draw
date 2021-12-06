@@ -24,7 +24,28 @@
         padding: 20px;
         width: 350px;
         box-shadow: 0 0 5px 0px #e2e2e2;
+        position: relative;
     }
+
+    .card:after,
+    .card:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .card:before{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .card:after{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
     .text{
         margin: 20px auto;
     }
