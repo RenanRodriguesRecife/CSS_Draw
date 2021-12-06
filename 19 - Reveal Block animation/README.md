@@ -1,0 +1,1 @@
+Criando uma animação de Reveal Block com CSS - https://www.youtube.com/watch?v=roy7z45lCes
