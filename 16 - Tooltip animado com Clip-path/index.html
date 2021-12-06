@@ -37,10 +37,21 @@
         clip-path: circle(100%);
     }
     
+    .tooltip:hover span{
+        opacity: 0;
+    }
+    
+    .icon{
+        float: right;
+        font-weight: bold;
+        margin-right: 3%;
+        transition: opacity 0.3s;
+    }
     
 </style>
 <body>
     <div class="tooltip">
+        <span class="icon"> i </span>
         <h1>OI</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur iste nostrum  </p>
     </div>
