@@ -37,7 +37,8 @@
         position: relative;
         padding: 2rem 1rem;
         opacity: 0;
-        animation: fadeInText 0s 1.1s both;
+        animation: /*enLargeBlock .5s .6s both,*/
+                   fadeInText 0s 1.1s both;
     }
 
     .text-block{
@@ -51,9 +52,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height:100%;
         background: rgb(119, 16, 16);
         transform: translateX(-100%);
+        animation: revealBlock .5s 1.1s both;
     }
 
     @keyframes fadeInText {
@@ -65,6 +67,27 @@
         }
         
     }
+
+    /*
+    @keyframes enLargeBlock {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    */
+
+    @keyframes revealBlock {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(100%);
+        }
+    }
+    
 </style>
 <body>
     <div class="text-block">
