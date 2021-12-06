@@ -40,10 +40,20 @@
     .card:before{
         border-left: 1px solid black;
         border-right: 1px solid black;
+        transform: scaleY(0);
     }
     .card:after{
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        transform: scaleX(0);
+    }
+
+    .card:hover:before{
+        transform: scaleY(1);
+    }
+
+    .card:hover:after{
+        transform: scaleX(1);
     }
 
     .text{
