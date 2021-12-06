@@ -30,9 +30,22 @@
         font-size: 2em;
         margin: 0 auto;
     }
+
+    .typing-animation{
+        animation: blinkCursor 650ms infinite normal;
+    }
+
+    @keyframes blinkCursor{
+        from{
+            border-right-color: rgba(255,255,255,0.75);
+        }
+        to{
+            border-right-color: transparent;
+        }
+    }
 </style>
 <body>
-   <p class="line">Oi, eu sou o goku</p>
+   <p class="line typing-animation">Oi, eu sou o goku</p>
     
 </body>
 </html>
