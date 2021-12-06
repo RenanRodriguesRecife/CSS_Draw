@@ -34,11 +34,9 @@
     }
 
     .typing-animation{
-        animation: blinkCursor 650ms infinite normal,
-                   typing 4s 1s normal;
+        animation: blinkCursor 650ms steps(20) infinite normal,
+                   typing 3s steps(20) 1s normal both;
     }
-
-
 
     @keyframes typing {
         from{
