@@ -45,6 +45,12 @@
         transition: 0.1s;
         clip-path: circle(50px at var(--x) var(--y));
     }
+
+    section h2:hover ~ .circle
+    {
+        background: #64ff14;
+        clip-path: circle(200px at var(--x) var(--y));
+    }
 </style>
 <body>
     <section>
@@ -57,8 +63,7 @@
         const pos = document.documentElement;
         pos.addEventListener('mousemove', e => {
             pos.style.setProperty('--x',e.clientX + 'px');
-            pos.style.setProperty('--y',e.clientY + 'px');
-            
+            pos.style.setProperty('--y',e.clientY + 'px');     
         })
     
     </script>
