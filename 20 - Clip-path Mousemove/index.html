@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <style>
     * {
         margin: 0;
@@ -42,7 +43,7 @@
         background: #ff2562;
         pointer-events: none;
         transition: 0.1s;
-        clip-path: circle(50px at center center);
+        clip-path: circle(50px at var(--x) var(--y));
     }
 </style>
 <body>
@@ -51,5 +52,15 @@
         <h2>How it is?</h2>
         <div class="circle"></div>
     </section>
+
+    <script type="text/javascript">
+        const pos = document.documentElement;
+        pos.addEventListener('mousemove', e => {
+            pos.style.setProperty('--x',e.clientX + 'px');
+            pos.style.setProperty('--y',e.clientY + 'px');
+            
+        })
+    
+    </script>
 </body>
 </html>
