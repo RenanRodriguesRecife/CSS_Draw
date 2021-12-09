@@ -42,3 +42,14 @@ label input:checked ~ span
     background: #05be05;
     box-shadow: 0 15px 25px #05be0566;
 }
+
+label span i
+{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 72px;
+    height: 72px;
+    background: #fff;
+    border-radius: 50%;
+}
