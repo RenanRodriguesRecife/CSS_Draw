@@ -79,3 +79,22 @@ label input:checked ~ span i::before
     background: #05be05;
     box-shadow: 31px 0 0 #05be05;
 }
+
+label span i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 6px;
+    border-radius: 6px;
+    background: #fe0000;
+    transition: 0.5s;
+}
+
+label input:checked ~ span i::after
+{
+    background: #05be05;
+
+}
