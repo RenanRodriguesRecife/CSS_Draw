@@ -52,4 +52,10 @@ label span i
     height: 72px;
     background: #fff;
     border-radius: 50%;
+    transition: 0.5s;
+}
+
+label input:checked ~ span i
+{
+    left:84px;
 }
