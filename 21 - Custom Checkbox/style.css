@@ -21,6 +21,7 @@ label input
 {
     position: relative;
     z-index: 1;
+    appearance: none;
 }
 label span
 {
@@ -32,4 +33,9 @@ label span
     background: #fe0000;
     border-radius: 80px;
     transition: 0.5s;
+}
+
+label input:checked ~ span
+{
+    background: #05be05;
 }
