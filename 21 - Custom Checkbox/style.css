@@ -70,5 +70,12 @@ label span i::before
     height: 12px;
     border-radius: 50%;
     background: #fe0000;
-    box-shadow: 30px 0 0 #fe0000;
+    box-shadow: 31px 0 0 #fe0000;
+    transition: 0.5s;
+}
+
+label input:checked ~ span i::before
+{
+    background: #05be05;
+    box-shadow: 31px 0 0 #05be05;
 }
