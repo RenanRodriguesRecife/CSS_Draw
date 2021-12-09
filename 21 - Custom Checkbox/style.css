@@ -95,6 +95,10 @@ label span i::after
 
 label input:checked ~ span i::after
 {
+    bottom: 12px;
+    height: 15px;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background: #05be05;
-
 }
