@@ -38,6 +38,7 @@ ul li span
     background: #333;
     color: rgba(255, 255, 255, 0.2);
     font-size: 30px !important;
+    transition: 0.2s;
 }
 
 ul li:hover span
@@ -72,4 +73,25 @@ ul li:hover span:nth-child(1)
 {
     transform: translate(0px,0px);
     opacity: 0.2;
+}
+
+ul li:nth-child(1):hover span
+{
+    background: #3b5999;
+}
+ul li:nth-child(2):hover span
+{
+    background: #55acee;
+}
+ul li:nth-child(3):hover span
+{
+    background: #25D366;
+}
+ul li:nth-child(4):hover span
+{
+    background: #0077B5;
+}
+ul li:nth-child(5):hover span
+{
+    background: #e4405f;
 }
