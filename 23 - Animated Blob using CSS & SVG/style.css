@@ -22,3 +22,8 @@ section
     height: 500px;
     background: #fff;
 }
+
+.blob:nth-child(2)
+{
+    filter:blur(50px);
+}
