@@ -11,5 +11,15 @@
     <div class="container">
         <h2><span>My first time using</span><br> Anime Js</h2>
     </div>
+
+
+    <script>
+        const container = document.querySelector('.container');
+        for (var i = 0;i<=5;i++){
+            const blocks = document.createElement('div');
+            blocks.classList.add('block');
+            container.appendChild(blocks);
+        }
+    </script>
 </body>
 </html>
