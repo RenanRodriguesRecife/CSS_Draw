@@ -17,9 +17,11 @@
                 let drop = document.createElement('i');
                 let size = Math.random()*5;
                 let posX = Math.floor(Math.random() * window.innerWidth);
+                let delay = Math.random() * - 20;
 
                 drop.style.width =0.2 + size+'px';
                 drop.style.left = posX + 'px';
+                drop.style.animationDelay = delay + 's';
                 body.appendChild(drop);
                 i++;
             }
