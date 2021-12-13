@@ -10,7 +10,7 @@
 <body>
     <script>
         function rain(){
-            let amount = 20;
+            let amount = 120;
             let body = document.querySelector('body');
             let i = 0;
             while(i < amount){
@@ -24,7 +24,7 @@
                 drop.style.width =0.2 + size+'px';
                 drop.style.left = posX + 'px';
                 drop.style.animationDelay = delay + 's';
-                drop.style.animationDuration = i + duration + 's';
+                drop.style.animationDuration = 1 + duration + 's';
 
                 body.appendChild(drop);
                 i++;
