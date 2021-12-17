@@ -13,6 +13,12 @@ body
     background: #1c1f2f;
 }
 
+.container
+{
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0001);
+}
+
 .container .loader
 {
     position: relative;
@@ -23,6 +29,23 @@ body
     border-bottom: 20px solid #06c8f0;
     border-right: 20px solid #06c8f0;
     transform: rotate(45deg);
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(90deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
 }
 
 .container .loader .ball
