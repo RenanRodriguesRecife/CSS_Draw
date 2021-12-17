@@ -12,3 +12,15 @@ body
     min-height: 100vh;
     background: #1c1f2f;
 }
+
+.container .loader
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #06c8f0;
+    border-right: 20px solid #06c8f0;
+    transform: rotate(45deg);
+}
