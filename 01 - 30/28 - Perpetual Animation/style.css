@@ -56,7 +56,25 @@ body
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    animation: animateBall 4s ease-in-out infinite;
 }
+
+@keyframes animateBall
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
 
 .container .loader .ball::before
 {
