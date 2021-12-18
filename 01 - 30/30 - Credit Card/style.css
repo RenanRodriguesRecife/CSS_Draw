@@ -11,3 +11,26 @@
     --gray1: #e1e1e1;
     --gray2: #6a6a6a;
 }
+
+html,
+body,
+.main-container{
+    height: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: var(--violet);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
