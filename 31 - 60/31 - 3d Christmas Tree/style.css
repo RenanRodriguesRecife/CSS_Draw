@@ -23,6 +23,15 @@ body{
     animation: animate 6s linear infinite;
 }
 
+.tree::before
+{
+    content: '\2B50';
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 25px);
+    font-size: 4em;
+}
+
 @keyframes animate
 {
     0%
