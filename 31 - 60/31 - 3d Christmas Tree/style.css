@@ -18,8 +18,34 @@ body{
     width: 300px;
     height: 300px;
     transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(30deg);
+    animation: animate 6s linear infinite;
 }
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%
+    {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+}
+
 .tree div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+   
+}
+
+.tree div.top span
 {
     position: absolute;
     top: 0;
@@ -30,5 +56,5 @@ body{
     background: linear-gradient(90deg, #69c069,#77dd77);
     clip-path: polygon(50% 0%,0% 100%,100% 100%);
     border-bottom: 10px solid #00000019;
-    transform: rotateY(calc(90deg * var(--i)));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px) rotateX(30deg);
 }
