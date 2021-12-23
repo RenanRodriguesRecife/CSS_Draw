@@ -5,3 +5,20 @@
     --color-star-dark: rgb(255,166,0);
     --color-star-light: linear-gradient(109.6deg, rgba(255,219,47,1) 11.2%, rgba(244,253,0,1) 100.2%);
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: var(--color-bg);
+    overflow: hidden;
+    background-size: 200% 200%;
+    animation: bg-animation 6s ease infinite;
+}
