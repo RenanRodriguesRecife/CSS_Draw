@@ -73,3 +73,8 @@ body{
     border-bottom: 10px solid #00000055;
     transform: rotateY(calc(90deg * var(--i))) translateZ(30px);
 }
+
+.shadow{
+
+    
+}
