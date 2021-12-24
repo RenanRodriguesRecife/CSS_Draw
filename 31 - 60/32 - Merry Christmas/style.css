@@ -175,3 +175,15 @@ body{
     transform: translateX(-50%);
     z-index: 12;
 }
+
+.shadow{
+    width: 12rem;
+    height: 2rem;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 50%;
+    position: relative;
+    filter: blur(6px);
+    left: 52%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
