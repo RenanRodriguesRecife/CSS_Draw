@@ -12,5 +12,12 @@ body{
 
 .ball{
     position: relative;
-    
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,0.07);
+    animation: bounceball alternate infinite 400ms 40ms ease-in-out;
 }
+
