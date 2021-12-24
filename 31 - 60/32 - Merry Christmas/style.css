@@ -163,3 +163,15 @@ body{
     margin-left: 4rem;
     clip-path: polygon(100% 3%,100% 0,100% 100%,0% 100%);
 }
+
+.base{
+    width: 5rem;
+    height: 2rem;
+    background-image: var(--color-star-light);
+    clip-path: polygon(0 0,100% 0,90% 100%,10% 100%);
+    position: relative;
+    left: 52%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 12;
+}
