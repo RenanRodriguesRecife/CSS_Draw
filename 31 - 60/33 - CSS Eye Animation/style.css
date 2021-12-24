@@ -53,3 +53,18 @@ body{
     left:20%;
     top:22%;
 }
+
+.shadow{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.07);
+    top: 190px;
+    left: 10px;
+    animation: bounceball alternate infinite 400ms 40ms ease-in-out;
+}
+
+@keyframes bounceball {
+    to{transform: scaleX(1.03) scaleY(0.97);}
+}
