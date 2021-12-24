@@ -37,6 +37,19 @@ body{
     position: relative;
 }
 
+.star{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--color-star-dark);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%, 68% 57%, 79% 91%, 50% 70%,
+    21% 91%, 32% 57%, 2% 35%,39% 35%);
+    position: absolute;
+    left: 52%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    z-index: 12;
+}
+
 .tree{
     padding: 1rem;
     display: flex;
