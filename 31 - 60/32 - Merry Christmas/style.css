@@ -1,6 +1,6 @@
 :root{
     --color-bg: radial-gradient(circle farthest-corner at 50.4% 50.5%, rgba(57,181,51,1) 0%, rgba(35,91,31,1) 90%);
-    --color-tree-back: linear-gradient( to left, rgb(1, 59, 1), rgba(175, 0), rgb(1, 59, 1));
+    --color-tree-back: linear-gradient( to left, rgb(1, 59, 1), rgba(0,175, 0), rgb(1, 59, 1));
     --color-tree-front: linear-gradient(to left, rgb(0, 175, 0), rgb(24,24,23), rgb(0,175,0));
     --color-star-dark: rgb(255,166,0);
     --color-star-light: linear-gradient(109.6deg, rgba(255,219,47,1) 11.2%, rgba(244,253,0,1) 100.2%);
@@ -21,4 +21,111 @@ body{
     overflow: hidden;
     background-size: 200% 200%;
     animation: bg-animation 6s ease infinite;
+}
+
+@keyframes bg-animation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+}
+
+.container{
+    width: 20rem;
+    position: relative;
+}
+
+.tree{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree > div{
+    height: 3rem;
+    background-image: var(--color-tree-back);
+    clip-path: polygon(0 40%,100% 0, 100% 60%, 0% 100%);
+    position: relative;
+    z-index: 11;
+    margin-top: -1.6rem;
+}
+
+.tree > div:nth-of-type(even){
+    background-image: var(--color-tree-front);
+    clip-path: polygon(0 0%,100% 40%, 100% 100%,0 60%);
+    margin-top: -1.6rem;
+    transform: rotate(2deg);
+    position: relative;
+    z-index: 1;
+    margin-left: 1rem;
+}
+
+
+.tree > div:nth-of-type(1){
+    width: 4rem;
+    height: 5rem;
+    clip-path: polygon(60% 0,100% 50%,100% 50%,0 100%,0 60%);
+}
+
+.tree > div:nth-of-type(2){
+    width: 5rem;   
+}
+
+.tree > div:nth-of-type(3){
+    width: 6rem;   
+}
+
+.tree > div:nth-of-type(4){
+    width: 7rem;   
+}
+
+.tree > div:nth-of-type(5){
+    width: 8rem;   
+}
+
+.tree > div:nth-of-type(6){
+    width: 9rem;   
+}
+
+.tree > div:nth-of-type(7){
+    width: 10rem;   
+}
+
+.tree > div:nth-of-type(8){
+    width: 11rem;   
+}
+
+.tree > div:nth-of-type(9){
+    width: 12rem;   
+}
+
+.tree > div:nth-of-type(10){
+    width: 13rem;   
+}
+
+.tree > div:nth-of-type(11){
+    width: 14rem;   
+}
+
+.tree > div:nth-of-type(12){
+    width: 15rem;   
+}
+
+
+.tree > div:nth-of-type(13){
+    width: 16rem;   
+}
+
+.tree > div:nth-of-type(14){
+    width: 17rem;   
+}
+
+.tree > div:nth-of-type(15){
+    width: 14rem;
+    height: 2rem;
+    margin-left: 4rem;
+    clip-path: polygon(100% 3%,100% 0,100% 100%,0% 100%);
 }
