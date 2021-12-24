@@ -21,3 +21,35 @@ body{
     animation: bounceball alternate infinite 400ms 40ms ease-in-out;
 }
 
+.iris{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: #229954;
+    border-radius: 50%;
+    left:30%;
+    top:30%;
+    transform: translateX(0px) translateY(0px) skewX(0deg) skewY(2deg);
+}
+
+.iris:before{
+    content: "";
+    position: absolute;
+    width:35%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: black;
+    top:30%;
+    left:30%;
+}
+
+.iris:after{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.43);
+    border-radius: 50%;
+    left:20%;
+    top:22%;
+}
