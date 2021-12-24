@@ -187,3 +187,34 @@ body{
     bottom: 5px;
     transform: translateX(-50%);
 }
+
+.small-star{
+    position: absolute;
+    top: 0;
+    left: var(--left);
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-star-dark);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 38% 35%);
+    animation: falling-star 2s var(--delay) linear infinite backwards;
+    z-index: 2;
+}
+
+.small-star:nth-child(2),
+.small-star:nth-child(6),
+.small-star:nth-child(8){
+    width: 1rem;
+    height: 1rem;
+    filter: blur(10px);
+}
+
+
+@keyframes falling-star{
+    0%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translate(10vw, 100vh);
+    }
+}
