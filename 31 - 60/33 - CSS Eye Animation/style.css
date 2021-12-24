@@ -1,0 +1,16 @@
+body{
+    background-color: #F5B7B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.container{
+    position: relative;
+}
+
+.ball{
+    position: relative;
+    
+}
