@@ -19,6 +19,52 @@
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+        var midWidth = Math.floor($(window).width()/2);
+        var midHeight = 100;
+        var mousePos ={
+            x: midWidth,
+            y: midHeight,
+        };
+       $(document).mousemove(function(evnet){
+        mousePos.x = event.pageX;
+        mousePos.y = event.pageY;
+        var transX = mousePos.x - midWidth;
+        var transY = mousePos.y - midHeight;
+        var skewX = 0;
+        if(transX >-30 && transX<30 && transY<0){
+            skewX = transX /2;
+        }else if(transX >-30 && transX < 30 && transY >= 0){
+            skewX = -(transX / 2);
+        }else if(transX > 30){
+            skewX = transY/2;
+        }
+
         
+        if(transY >=30){
+            transX = 30;
+        }else if (transX <= -30){
+            transX = -30;
+        }
+        
+        if(transY>=30){
+            transY=30;
+        }else if(transY <=-30){
+            transY=-30;
+        }
+        
+        if(skewX>=15){
+            skewX = 15;
+        }else if(skewX <=-15){
+            skewX=-15;
+        }
+        $('.iris').css({
+            "transform": "translateX(" + transX + "px) translateY(" +
+            transY + "px) skewX(" + skewX + "deg) skewY(2deg)"
+        });
+       });
+    });
+</script>
 </body>
 </html>
