@@ -33,3 +33,13 @@ body{
     top: 308px;
     left: 25px;
 }
+
+.holder:before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 8px;
+    background-color: #003049;
+    top: 55px;
+    left: -130px;
+}
