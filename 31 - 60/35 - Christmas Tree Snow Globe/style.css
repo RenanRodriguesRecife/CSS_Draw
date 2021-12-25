@@ -5,3 +5,19 @@ body{
     background-color: #f1faee;
     height: 100vh;
 }
+
+.snowball{
+    position: relative;
+    top: -280px;
+    left: -200px;
+}
+
+.ball{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #003049;
+    background-color: #bde0fe;
+    box-shadow: inset 10px 10px 0 white;
+    border-radius: 50%;
+}
