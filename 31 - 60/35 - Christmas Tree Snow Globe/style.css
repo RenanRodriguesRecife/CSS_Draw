@@ -43,3 +43,36 @@ body{
     top: 55px;
     left: -130px;
 }
+
+.tree{
+    position: absolute;
+    background-color: #003049;
+    width: 8px;
+    height: 40px;
+    top: 270px;
+    left: 145px;
+}
+
+.tree:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 120px solid #003049;
+    top: -120px;
+    left: -70px;
+}
+
+.tree:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 95px solid #386641;
+    top: -103px;
+    left: -55px;
+}
