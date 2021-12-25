@@ -20,4 +20,16 @@ body{
     background-color: #bde0fe;
     box-shadow: inset 10px 10px 0 white;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.holder{
+    position: absolute;
+    width: 250px;
+    height: 55px;
+    background-color: #2a9d8f;
+    border: 8px solid #003049;
+    border-radius: 20px 20px 0 0;
+    top: 308px;
+    left: 25px;
 }
