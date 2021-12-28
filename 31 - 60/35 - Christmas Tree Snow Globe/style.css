@@ -258,3 +258,17 @@ body{
     display: block;
     transform: rotate(-35deg);
 }
+
+.star1::after{
+    content: "";
+    position: absolute;
+    border-bottom: 31.85px solid #003849;
+    border-left: 45.5px solid transparent ;
+    border-right: 45.5px solid transparent;
+    height: 0;
+    width: 0;
+    top: 1.365px;
+    left: -48.37px;
+    display: block;
+    transform: rotate(-70deg);
+}
