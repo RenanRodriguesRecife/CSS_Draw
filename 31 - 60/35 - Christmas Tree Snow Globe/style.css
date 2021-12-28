@@ -76,3 +76,29 @@ body{
     top: -103px;
     left: -55px;
 }
+
+.tree1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 120px solid #003049;
+    top: -160px;
+    left: -70px;
+    z-index: 1;
+}
+
+.tree1:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 95px solid #6a994e;
+    top: 17px;
+    left: -60px;
+}
+
+
