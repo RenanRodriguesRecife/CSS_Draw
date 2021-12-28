@@ -123,3 +123,35 @@ body{
     top: 17px;
 }
 
+.snow{
+    position: absolute;
+    z-index: 6;
+    background-color: white;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    top: -119px;
+    left:-30px;
+}
+
+.snow::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    top: 50px;
+    left: 20px;
+    background-color: white;
+}
+
+.snow::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    top: 90px;
+    left: 10px;
+}
