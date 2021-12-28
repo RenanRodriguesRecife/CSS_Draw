@@ -315,3 +315,13 @@ body{
     border-left: 25px solid transparent;
     transform: rotate(-70deg);
 }
+
+.text{
+    position: absolute;
+    font-family: 'Brush Script MT',cursive;
+    font-size: 35px;
+    top:5px;
+    left:20px;
+    color:#ef233c;
+    text-shadow:1px 1px 1px white;
+}
