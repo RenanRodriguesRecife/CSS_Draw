@@ -272,3 +272,32 @@ body{
     display: block;
     transform: rotate(-70deg);
 }
+
+.star{
+    position: absolute;
+    margin: 50px 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 17.5px solid #ffbe0b;
+    border-left: 25px solid transparent;
+    top: 10px;
+    left:126px;
+    z-index: 4;
+    transform: rotate(35deg);
+}
+
+.star::before{
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid #ffbe0b;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    height: 0;
+    width: 0;
+    top: -12.5px;
+    left:-17.5px;
+    display: block;
+    transform: rotate(-35deg);
+}
