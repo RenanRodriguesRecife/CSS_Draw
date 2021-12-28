@@ -101,4 +101,25 @@ body{
     left: -60px;
 }
 
+.tree2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 110px solid #003049;
+    top: -200px;
+    left: -60px;
+    z-index: 2;
+}
+
+.tree2::before{
+    content: "";
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid #386641;
+    left:-50px;
+    top: 17px;
+}
 
