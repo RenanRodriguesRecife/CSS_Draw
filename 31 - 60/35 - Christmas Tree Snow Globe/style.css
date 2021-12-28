@@ -228,3 +228,33 @@ body{
     top: 75px;
     left: -25px;
 }
+
+.star1{
+    margin: 50px 0;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 45.5px solid transparent;
+    border-bottom: 31.85px solid #003049;
+    border-left: 45.5px solid transparent;
+    transform: rotate(35deg);
+    top: 3px;
+    left: 107.5px;
+    z-index: 3;
+
+}
+
+.star1::before{
+    content: "";
+    position: absolute;
+    border-bottom: 36.4px solid #003049;
+    border-left: 12.85px solid transparent;
+    border-right: 12.95px solid transparent;
+    height: 0;
+    width: 0;
+    top: -22.75px;
+    left: -31.85px;
+    display: block;
+    transform: rotate(-35deg);
+}
