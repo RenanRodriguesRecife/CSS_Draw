@@ -179,3 +179,14 @@ body{
     left: 15px;
 }
 
+.balls:after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #8338ec;
+    border: 4px solid #003049;
+    top: 50px;
+    left: -55px;
+}
