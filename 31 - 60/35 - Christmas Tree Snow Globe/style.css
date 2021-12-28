@@ -301,3 +301,17 @@ body{
     display: block;
     transform: rotate(-35deg);
 }
+
+.star::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0.75px;
+    left: -26.25px;
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 17.5px solid #ffbe0b;
+    border-left: 25px solid transparent;
+    transform: rotate(-70deg);
+}
