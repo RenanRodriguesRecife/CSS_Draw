@@ -319,9 +319,94 @@ body{
 .text{
     position: absolute;
     font-family: 'Brush Script MT',cursive;
-    font-size: 35px;
+    font-size: 28px;
     top:5px;
-    left:20px;
+    left:10px;
     color:#ef233c;
     text-shadow:1px 1px 1px white;
+}
+
+.fall{
+    position: absolute;
+    z-index: 15;
+}
+
+.snowFlakes1, .snowFlakes2, .snowFlakes3,
+.snowFlakes4, .snowFlakes5, .snowFlakes6,
+.snowFlakes7, .snowFlakes8, .snowFlakes9,
+.snowFlakes10{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+}
+
+.snowFlakes1{
+    top: 10px;
+    left: 80px;
+    animation: fall 7s linear infinite;
+}
+
+.snowFlakes2{
+    top: 10px;
+    left: 140px;
+    animation: fall 15s linear infinite;
+}
+
+
+.snowFlakes3{
+    top: 10px;
+    left: 40px;
+    animation: fall 9s linear infinite;
+}
+
+
+.snowFlakes4{
+    top: 10px;
+    left: 40px;
+    animation: fall 9s linear infinite;
+}
+
+.snowFlakes5{
+    top: 10px;
+    left: 190px;
+    animation: fall 9.5s linear infinite;
+}
+
+
+.snowFlakes6{
+    top: 10px;
+    left: 220px;
+    animation: fall 4s linear infinite;
+}
+
+
+.snowFlakes7{
+    top: 10px;
+    left: 250px;
+    animation: fall 13s linear infinite;
+}
+
+.snowFlakes8{
+    top: 10px;
+    left: 30px;
+    animation: fall 3s linear infinite;
+}
+
+.snowFlakes9{
+    top: 10px;
+    left: 130px;
+    animation: fall 7s linear infinite;
+}
+
+
+.snowFlakes10{
+    top: 10px;
+    left: 230px;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    100%{transform: translateY(300px);}
 }
