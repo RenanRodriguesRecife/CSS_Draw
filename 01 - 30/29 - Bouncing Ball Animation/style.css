@@ -45,6 +45,19 @@ body::before
     animation: shadow 2s linear infinite;
 }
 
+@keyframes shadow {
+    0%, 100%
+    {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+    30%, 40%
+    {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
 .loader .semi-circle
 {
     position: absolute;
