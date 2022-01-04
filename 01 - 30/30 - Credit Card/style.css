@@ -130,3 +130,14 @@ ul{
     text-transform: uppercase;
     font-size: 1.8rem;
 }
+
+/* Card back */
+
+.card__back{
+    padding-top: 4rem;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped{
+    transform: rotateY(180deg);
+}
