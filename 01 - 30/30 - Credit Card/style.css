@@ -157,3 +157,24 @@ ul{
     padding-right: 1rem;
 }
 
+.card__cvv,
+.card__cvv-number,
+.card__info{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.card__cvv,
+.card__cvv-number{
+    color:var(--dark-blue);
+}
+
+.card__cvv{
+    margin-right: 0.5rem;
+}
+
+.card__info{
+    font-size: 0.7rem;
+    padding: 1.5rem 2rem;
+    color: var(--white);
+}
