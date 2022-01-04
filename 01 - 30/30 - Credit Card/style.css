@@ -85,13 +85,14 @@ ul{
 .card__logo{
     width: 7rem;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .card__number{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .number-group,
