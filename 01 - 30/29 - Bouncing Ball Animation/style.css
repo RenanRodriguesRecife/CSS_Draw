@@ -31,6 +31,20 @@ body::before
     width: 200px;
 }
 
+.loader::before
+{
+    content: '';
+    position: absolute;
+    bottom: 75px;
+    height: 10px;
+    width: 60px;
+    background: #000;
+    border-radius: 50%;
+    filter: blur(4px);
+    opacity: 0.5;
+    animation: shadow 2s linear infinite;
+}
+
 .loader .semi-circle
 {
     position: absolute;
