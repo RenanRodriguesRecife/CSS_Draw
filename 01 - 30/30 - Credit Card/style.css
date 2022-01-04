@@ -115,3 +115,12 @@ ul{
     display: flex;
     flex-direction: column;
 }
+
+.card__holder__title,
+.card__expiration__title{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    opacity: 0.7;
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+}
