@@ -42,3 +42,13 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
+
+/* Card */
+
+.scene{
+    width: 90%;
+    max-width: 35rem;
+    height: 20rem;
+    margin: 0 auto;
+    perspective: 600px;
+}
