@@ -124,3 +124,9 @@ ul{
     font-size: 1.3rem;
     margin-bottom: 0.1rem;
 }
+
+.card__holder__name,
+.card__expiration__date{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
