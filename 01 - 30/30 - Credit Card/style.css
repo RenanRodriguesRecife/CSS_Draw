@@ -141,3 +141,8 @@ ul{
 .card.is-flipped{
     transform: rotateY(180deg);
 }
+
+.card__stripe{
+    height: 4rem;
+    background: var(--gray1);
+}
