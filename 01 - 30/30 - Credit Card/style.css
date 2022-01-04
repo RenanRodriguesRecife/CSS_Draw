@@ -81,3 +81,25 @@ ul{
 .card__front{
     padding: 0 2rem;
 }
+
+.card__logo{
+    width: 7rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.card__number{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.number-group,
+.card__holder__name,
+.card__expiration__date{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2.3rem;
+    text-shadow: 0 1.2px var(--gray2);
+    color:var(--white);
+    letter-spacing: 1px;
+}
