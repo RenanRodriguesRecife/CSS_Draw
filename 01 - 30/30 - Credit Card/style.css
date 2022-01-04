@@ -104,3 +104,14 @@ ul{
     color:var(--white);
     letter-spacing: 1px;
 }
+
+.card__details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__holder,
+.card__expiration{
+    display: flex;
+    flex-direction: column;
+}
