@@ -14,12 +14,12 @@ canvas.height = window.innerHeight;
 // gradient.addColorStop(1,'magenta');
 
 // Radial GRADIENT
-let gradient = ctx.createRadialGradient(canvas.width/2, 
-    canvas.height/2, 100,canvas.width/2,canvas.height/2,
-    canvas.width/2);
-gradient.addColorStop(0,'red');
-gradient.addColorStop(0.5,'cyan');
-gradient.addColorStop(1,'magenta');
+// let gradient = ctx.createRadialGradient(canvas.width/2, 
+//     canvas.height/2, 100,canvas.width/2,canvas.height/2,
+//     canvas.width/2);
+// gradient.addColorStop(0,'red');
+// gradient.addColorStop(0.5,'cyan');
+// gradient.addColorStop(1,'magenta');
 
 class Symbol{
     constructor(x, y, fontSize, canvasHeight){
@@ -80,8 +80,8 @@ function animate(timeStamp){
         ctx.fillStyle = 'rgba(0,0,0,0.05)'
         ctx.textAlign = 'center'
         ctx.fillRect(0,0,canvas.width, canvas.height)
-        // ctx.fillStyle = '#0aff0a'
-        ctx.fillStyle = gradient;
+        ctx.fillStyle = '#0aff0a'
+        // ctx.fillStyle = gradient;
         ctx.font = effect.fontSize + 'px monospace';
         effect.symbols.forEach(symbol => symbol.draw(ctx))
         timer = 0;
@@ -106,10 +106,10 @@ window.addEventListener('resize',function(){
     // gradient.addColorStop(0.8,'blue');
     // gradient.addColorStop(1,'magenta');
     
-    gradient = ctx.createRadialGradient(canvas.width/2, 
-        canvas.height/2, 100,canvas.width/2,canvas.height/2,
-        canvas.width/2);
-    gradient.addColorStop(0,'red');
-    gradient.addColorStop(0.5,'cyan');
-    gradient.addColorStop(1,'magenta');
+    // gradient = ctx.createRadialGradient(canvas.width/2, 
+    //     canvas.height/2, 100,canvas.width/2,canvas.height/2,
+    //     canvas.width/2);
+    // gradient.addColorStop(0,'red');
+    // gradient.addColorStop(0.5,'cyan');
+    // gradient.addColorStop(1,'magenta');
 });
