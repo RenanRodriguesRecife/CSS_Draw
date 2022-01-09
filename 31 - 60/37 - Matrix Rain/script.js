@@ -4,13 +4,21 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
-// GRADIANT TRAINING
-let gradient = ctx.createLinearGradient(0,0,canvas.width, canvas.height);
+// GRADIENT TRAINING
+// let gradient = ctx.createLinearGradient(0,0,canvas.width, canvas.height);
+// gradient.addColorStop(0,'red');
+// gradient.addColorStop(0.2,'yellow');
+// gradient.addColorStop(0.4,'green');
+// gradient.addColorStop(0.6,'cyan');
+// gradient.addColorStop(0.8,'blue');
+// gradient.addColorStop(1,'magenta');
+
+// Radial GRADIENT
+let gradient = ctx.createRadialGradient(canvas.width/2, 
+    canvas.height/2, 100,canvas.width/2,canvas.height/2,
+    canvas.width/2);
 gradient.addColorStop(0,'red');
-gradient.addColorStop(0.2,'yellow');
-gradient.addColorStop(0.4,'green');
-gradient.addColorStop(0.6,'cyan');
-gradient.addColorStop(0.8,'blue');
+gradient.addColorStop(0.5,'cyan');
 gradient.addColorStop(1,'magenta');
 
 class Symbol{
@@ -90,13 +98,13 @@ window.addEventListener('resize',function(){
     effect.resize(canvas.width, canvas.height);
 
 
-    gradient = ctx.createLinearGradient(0,0,canvas.width, canvas.height);
-    gradient.addColorStop(0,'red');
-    gradient.addColorStop(0.2,'yellow');
-    gradient.addColorStop(0.4,'green');
-    gradient.addColorStop(0.6,'cyan');
-    gradient.addColorStop(0.8,'blue');
-    gradient.addColorStop(1,'magenta');
+    // gradient = ctx.createLinearGradient(0,0,canvas.width, canvas.height);
+    // gradient.addColorStop(0,'red');
+    // gradient.addColorStop(0.2,'yellow');
+    // gradient.addColorStop(0.4,'green');
+    // gradient.addColorStop(0.6,'cyan');
+    // gradient.addColorStop(0.8,'blue');
+    // gradient.addColorStop(1,'magenta');
     
 
 });
