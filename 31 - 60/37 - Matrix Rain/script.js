@@ -106,5 +106,10 @@ window.addEventListener('resize',function(){
     // gradient.addColorStop(0.8,'blue');
     // gradient.addColorStop(1,'magenta');
     
-
+    gradient = ctx.createRadialGradient(canvas.width/2, 
+        canvas.height/2, 100,canvas.width/2,canvas.height/2,
+        canvas.width/2);
+    gradient.addColorStop(0,'red');
+    gradient.addColorStop(0.5,'cyan');
+    gradient.addColorStop(1,'magenta');
 });
