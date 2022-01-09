@@ -12,8 +12,9 @@ class Symbol{
         this.text = '';
         this.canvasHeight = canvasHeight;
     }
-    draw(){
-
+    draw(context){
+        this.text = this.characters.charAt(Math.floor(Math.random()*this.characters.length));
+        
     }
 }
 
