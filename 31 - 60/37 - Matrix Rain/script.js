@@ -16,3 +16,23 @@ class Symbol{
 
     }
 }
+
+
+class Effect{
+    constructor(canvasWidth, canvasHeight){
+        this.canvasWidth = canvasWidth;
+        this.canvasHeight = canvasHeight;
+        this.fontSize = 25;
+        this.columns = this.canvasWidth/this.fontSize;
+        this.symbols = []
+    }
+    #initialize(){
+        for(let i = 0; i < this.columns.length; i++){
+            this.symbols[i] = new Symbol();
+        }
+    }
+}
+
+function animate(){
+
+}
