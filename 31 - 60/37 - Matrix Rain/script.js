@@ -88,4 +88,15 @@ window.addEventListener('resize',function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     effect.resize(canvas.width, canvas.height);
+
+
+    gradient = ctx.createLinearGradient(0,0,canvas.width, canvas.height);
+    gradient.addColorStop(0,'red');
+    gradient.addColorStop(0.2,'yellow');
+    gradient.addColorStop(0.4,'green');
+    gradient.addColorStop(0.6,'cyan');
+    gradient.addColorStop(0.8,'blue');
+    gradient.addColorStop(1,'magenta');
+    
+
 });
