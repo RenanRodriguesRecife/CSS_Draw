@@ -72,7 +72,7 @@
             e = e || window.event;
             var sX = e.clinetX,
                 sY = e.clientY;
-        }
+        
 
         this.onpointermove = function(e){
             e = e || window.event;
@@ -105,9 +105,10 @@
                 }
             },17);
 
-            this.onmspointermove = this.onpointerup = nul;
+            this.onpointermove = this.onpointerup = null;
         };
-        
+        return false;
+    }
     </script>
 </body>
 </html>
