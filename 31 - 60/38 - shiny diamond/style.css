@@ -10,3 +10,32 @@ body{
     justify-content: center;
     height: 100vh;
 }
+
+.diamond-container{
+    position: relative;
+}
+
+.diamond{
+    position: relative;
+    left: -100px;
+    top: -50px;
+}
+
+.diamond-top{
+    position: relative;
+}
+
+.diamond-top:before, .diamond-top:after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 0;
+}
+
+.diamond-top:before{
+    border-color: transparent transparent #b4e3e6 transparent;
+    border-width: 0 25px 30px 25px;
+    filter: drop-shadow(50px 0 #94d7d9) drop-shadow(50px 0 #b4e3e6);
+}
