@@ -17,6 +17,7 @@
             <img src="img/5.jpg" alt="">
             <img src="img/6.jpg" alt="">
             <img src="img/7.jpg" alt="">
+            
         </div>
         <div id="ground"></div>
     </div>
@@ -70,13 +71,13 @@
         document.onpointerdown = function(e){
             clearInterval(odrag.timer);
             e = e || window.event;
-            var sX = e.clinetX,
+            var sX = e.clientX,
                 sY = e.clientY;
         
 
         this.onpointermove = function(e){
             e = e || window.event;
-            var nX = e.clinetX,
+            var nX = e.clientX,
                 nY = e.clientY;
 
                 desX = nX - sX;
