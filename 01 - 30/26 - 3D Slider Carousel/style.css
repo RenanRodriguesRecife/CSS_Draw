@@ -50,3 +50,22 @@ body{
     left: 50%;
     transform: translate(-50%, -50%) rotateX(90deg);
 }
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinRevert {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
