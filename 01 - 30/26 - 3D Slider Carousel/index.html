@@ -20,5 +20,33 @@
         </div>
         <div id="ground"></div>
     </div>
+
+    <script>
+        var radius = 340;
+        var autoRotate = true;
+        var rotateSpeed = -60;
+        var imgWidth = 190;
+        var imgHeight = 230;
+
+        setTimeout(init, 1000);
+
+        var odrag = document.getElementById('drag');
+        var ospin = document.getElementById('spin');
+        var aImg = ospin.getElementsByTagName('img');
+
+        var aEle = [...aImg];
+        ospin.style.width = imgWidth + "px";
+        ospin.style.height = imgHeight + "px";
+
+        var ground = document.getElementById('ground');
+        ground.style.width = radius * 3 + "px";
+        ground.style.height = radius * 3 + "px";
+
+        function init(delayTime){
+            for(var i = 0; i < aEle.length; i++){
+                aEle[i].style.transform = "rotateY(" + (i*(360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+            }
+        }
+    </script>
 </body>
 </html>
