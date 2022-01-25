@@ -39,3 +39,10 @@ body{
     border-width: 0 25px 30px 25px;
     filter: drop-shadow(50px 0 #94d7d9) drop-shadow(50px 0 #b4e3e6);
 }
+
+.diamond-top::after{
+    border-color: #d8f8f9 transparent transparent transparent;
+    border-width: 30px 25px 0 25px;
+    left: 25px;
+    filter:drop-shadow(50px 0 #d8f8f9);
+}
