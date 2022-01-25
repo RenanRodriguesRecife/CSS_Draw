@@ -96,6 +96,7 @@ body{
 .one{
     font-size:40px;
     text-shadow: 0 0 white, -115px -75px white;
+    animation: shine .5s linear infinite;
 }
 
 .two{
@@ -103,4 +104,10 @@ body{
     left:-65px;
     top: 45px;
     text-shadow: 0 0 white, 55px -115px white;
+    animation: shine .5s linear infinite .25s;
+}
+
+@keyframes shine{
+    from {opacity: 1;}
+    to{opacity: 0;}
 }
