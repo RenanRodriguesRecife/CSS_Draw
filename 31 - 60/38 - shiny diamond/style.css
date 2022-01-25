@@ -69,3 +69,13 @@ body{
     left: -25px;
 }
 
+.diamond-bottom:after{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 10px;
+    background-color: #b4e3e6;
+    top:-135px;
+    left:-50px;
+}
