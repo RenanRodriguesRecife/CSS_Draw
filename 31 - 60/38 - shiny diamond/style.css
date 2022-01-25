@@ -46,3 +46,17 @@ body{
     left: 25px;
     filter:drop-shadow(50px 0 #d8f8f9);
 }
+
+.diamond-bottom, .diamond-bottom::before{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.diamond-bottom{
+    left:0;
+    top:30px;
+    border-color: #70ced4 transparent transparent transparent;
+    border-width: 100px 75px 0 75px;
+}
