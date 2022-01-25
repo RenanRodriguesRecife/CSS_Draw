@@ -81,3 +81,26 @@ body{
     top:-135px;
     left:-50px;
 }
+
+
+.sparkles{
+    z-index: 2;
+    position: absolute;
+}
+
+.one, .two{
+    color: transparent;
+    position: absolute;
+}
+
+.one{
+    font-size:40px;
+    text-shadow: 0 0 white, -115px -75px white;
+}
+
+.two{
+    font-size: 25px;
+    left:-65px;
+    top: 45px;
+    text-shadow: 0 0 white, 55px -115px white;
+}
