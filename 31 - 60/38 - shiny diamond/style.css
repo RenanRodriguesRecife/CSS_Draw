@@ -60,3 +60,12 @@ body{
     border-color: #70ced4 transparent transparent transparent;
     border-width: 100px 75px 0 75px;
 }
+
+.diamond-bottom::before{
+    content: "";
+    border-color: #b4e3e6 transparent transparent transparent;
+    border-width: 100px 25px 0 25px;
+    top: -100px;
+    left: -25px;
+}
+
