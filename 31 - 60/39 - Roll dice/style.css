@@ -64,6 +64,16 @@ button:hover, button:active{
     box-shadow: inset 2px 2px #d90429;
 }
 
+.dice-one{
+    position: absolute;
+    left: 150px;
+}
+
+.dice-two{
+    position: absolute;
+    left: -50px;
+}
+
 .side{
     position: absolute;
     background-color: #fff;
@@ -80,7 +90,7 @@ button:hover, button:active{
 }
 
 .side:nth-child(6){
-    transform: translateY(-90deg) translateZ(3.1em);
+    transform: rotateY(-90deg) translateZ(3.1em);
 }
 
 .side:nth-child(3){
@@ -89,6 +99,10 @@ button:hover, button:active{
 
 .side:nth-child(4){
     transform: rotateX(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(5){
+    transform: rotateX(-90deg) translateZ(3.1em);
 }
 
 .side:nth-child(2){
@@ -136,7 +150,7 @@ button:hover, button:active{
 
 .four-2, .five-2,.six-3{
     top:80%;
-    left:80%;
+    left:20%;
 }
 
 .two-2,.three-3,.four-4,.five-4,.six-6{
