@@ -1,0 +1,25 @@
+body{
+    background: aliceblue;
+    font-family:montserrat;
+}
+
+.section-heading h2{
+    font-family: orbitron;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.box{
+    background:#fff;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: rgba(50,50,93,0.25) 0 50px 100px -20px,
+                rgba(0,0,0,0.3) 0 30px 60px -30px;
+}
+
+.circle-chart__subline{
+    text-transform: uppercase;
+    font-weight: bold;
+}
