@@ -92,6 +92,15 @@ body{
                     0 80px 20px 0px rgba(0 ,0, 0,0.5);
 }
 
+.switch .light{
+    opacity: 0;
+    animation: light-off 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:radial-gradient(#ffc97e, #ff1818 40%, transparent 70%);
+}
+
 .switch .dots{
     position: absolute;
     width: 100%;
@@ -142,4 +151,9 @@ body{
     100%{
         opacity: 1;
     }
+}
+
+@keyframes light-off{
+    0%{ opacity: 1;}
+    80%{ opacity: 0;}
 }
