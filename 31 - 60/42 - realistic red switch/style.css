@@ -1,0 +1,14 @@
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #fafcff;
+    background-image: radial-gradient(circle,transparent,#afb5bf),
+    linear-gradient(transparent,#d3d8e8);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
