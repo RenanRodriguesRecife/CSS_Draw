@@ -12,3 +12,42 @@ body{
     justify-content: center;
 }
 
+.switch{
+    background-color:black;
+    width: 150px;
+    height: 195px;
+    box-shadow:
+    0 0 10px 2px rgba(0,0,0,0.2),
+    0 0 1px 2px black,
+    inset 0 2px 2px -2px white,
+    inset 0 0 2px 15px #47434c,
+    inset 0 0 2px 22px black;
+    border-radius: 5px;
+    padding: 20px;
+    perspective: 700px;
+}
+
+.switch input{
+    display: none;
+}
+
+.switch input:checked + .button{
+    transform: translate(20px) rotatex(25deg);
+    box-shadow: 0 -10px 20px #ff1818;
+}
+
+.switch input:checked + .button .light{
+    animation: flicker 0.2s infinite 0.3s;
+}
+
+@keyframes flicker {
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
