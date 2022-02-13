@@ -16,3 +16,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(0,0,0,.4);
 }
+
+.valentines-day-card:before{
+    content:"";
+    position:absolute;
+    background-color: #ffb3c1;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 140px;
+    left:-25px;
+    box-shadow: 60px 20px #ffb3c1, 130px 10px #ffb3c1, 190px 20px
+    #ffb3c1, 260px -5px #ffb3c1, 340px 20px #ffb3c1;
+}
