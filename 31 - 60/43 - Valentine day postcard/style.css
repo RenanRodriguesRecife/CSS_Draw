@@ -29,3 +29,16 @@ body {
     box-shadow: 60px 20px #ffb3c1, 130px 10px #ffb3c1, 190px 20px
     #ffb3c1, 260px -5px #ffb3c1, 340px 20px #ffb3c1;
 }
+
+.valentines-day-card:after{
+    content:"";
+    position: absolute;
+    background-color: #ffccd5;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    top: 160px;
+    left:-40px;
+    box-shadow: 50px 20px #ffccd5, 120px 40px #ffccd5, 200px 15px #ffccd5,
+    260px 30px #ffccd5, 330px 30px #ffccd5, 380px 10px #ffccd5;
+}
