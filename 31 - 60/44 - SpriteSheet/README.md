@@ -1,0 +1,1 @@
+Sprite sheet animation tutorial with HTML and CSS - https://www.youtube.com/watch?v=ekI7vjkFrGA
