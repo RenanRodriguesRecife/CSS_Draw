@@ -6,4 +6,18 @@ body{
     width: 32px;
     height: 32px;
     overflow:hidden;
+    background: hidden;
+}
+
+.Character_spritesheet{
+    animation:moveSpritesheet 1s steps(4) infinite;
+}
+
+@keyframes moveSpritesheet{
+    from{
+        transform: translate(0px,0,0)
+    }
+    to{
+        transform: translate3d(-108%,0,0)
+    }
 }
