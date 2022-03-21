@@ -1,0 +1,9 @@
+body{
+    background: #96ffc1;
+}
+
+.Character{
+    width: 32px;
+    height: 32px;
+    overflow:hidden;
+}
