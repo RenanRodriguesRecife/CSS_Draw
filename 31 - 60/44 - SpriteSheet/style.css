@@ -18,6 +18,10 @@ body{
     width: calc(128px * var(--pixel-size));
 }
 
+.pixelart{
+    image-rendering: pixelated;
+}
+
 @keyframes moveSpritesheet{
     from{
         transform: translate(0px,0,0)
