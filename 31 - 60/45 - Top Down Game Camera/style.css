@@ -3,6 +3,18 @@
     --grid-cell:calc(var(--pixel-size)*16);
 }
 
+@media(min-width: 700px){
+    :root{
+        --pixel-size:3px;
+    }
+}
+
+@media(min-width: 900px){
+    :root{
+        --pixel-size:4px;
+    }
+}
+
 .pixel-art{
     image-rendering: pixelated;
 }
