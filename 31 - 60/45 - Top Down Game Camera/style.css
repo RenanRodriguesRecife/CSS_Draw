@@ -35,3 +35,30 @@
     height: calc(10*var(--grid-cell));
     position: relative;
 }
+
+/* CHARACTER */
+.character{
+    width: calc(var(--grid-cell)*2);
+    height: calc(var(--grid-cell)*2);
+    position: absolute;
+    overflow: hidden;
+}
+
+.shadow{
+    width: calc(var(--grid-cell)*2);
+    height: calc(var(--grid-cell)*2);
+    position: absolute;
+    left:0;
+    top: 0;
+    background:url('assets/DemoRpgCharacterShadow.png') no-repeat no-repeat;
+    background-size: 100%;
+}
+
+.Character_spritesheet{
+    
+    position: absolute;
+    background:url("assets/DemoRpgCharacter.png") no-repeat no-repeat;
+    width:  calc(var(--grid-cell)*8);
+    height: calc(var(--grid-cell)*8);
+
+}
