@@ -1,3 +1,13 @@
+html, body{
+    height: 100%;
+}
+body{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 :root{
     --pixel-size: 2px;
     --grid-cell:calc(var(--pixel-size)*16);
