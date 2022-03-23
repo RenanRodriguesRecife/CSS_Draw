@@ -26,3 +26,12 @@
     background: #61ddf7;
     position:relative;
 }
+
+.map{
+    image-rendering: pixelated;
+    background-image: url("assets/CameraDemoMap.webp");
+    background-size: 100%;
+    width: calc(13*var(--grid-cell));
+    height: calc(10*var(--grid-cell));
+    position: relative;
+}
