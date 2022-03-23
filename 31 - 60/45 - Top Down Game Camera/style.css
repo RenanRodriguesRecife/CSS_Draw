@@ -2,3 +2,7 @@
     --pixel-size: 2px;
     --grid-cell:calc(var(--pixel-size)*16);
 }
+
+.pixel-art{
+    image-rendering: pixelated;
+}
