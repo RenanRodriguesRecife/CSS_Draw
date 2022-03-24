@@ -21,3 +21,13 @@ const placeCharacter = () => {
     }
     character.setAttribute("walking", held_direction? "true":"false");
 }
+
+//game loop
+const step = () =>{
+    placeCharacter();
+    window.requestAnimationFrame(()=>{
+        step();
+    })
+}
+step();//primeiro passo
+
