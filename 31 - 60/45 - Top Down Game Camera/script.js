@@ -39,3 +39,11 @@ const directions = {
     left: "left",
     right: "right",
 }
+
+const keys = {
+    36: directions.up,
+    37: directions.left,
+    38: directions.right,
+    40: directions.down,
+}
+
