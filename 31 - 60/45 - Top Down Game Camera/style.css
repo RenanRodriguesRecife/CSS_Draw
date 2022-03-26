@@ -86,7 +86,7 @@ body{
 
 .character[facing="right"] .character_spritesheet
 {
-    background-position-y: calc(var(--pixel-size)*32);
+    background-position-y: calc(var(--pixel-size)*-32);
 }
 .character[facing="up"] .character_spritesheet
 {
@@ -98,7 +98,7 @@ body{
     background-position-y: calc(var(--pixel-size)*-96);
 }
 
-.character[facing="true"] .character_spritesheet
+.character[walking="true"] .character_spritesheet
 {
     animation: walkAnimation 0.6s steps(4) infinite;
 }
