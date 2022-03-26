@@ -41,9 +41,9 @@ const directions = {
 }
 
 const keys = {
-    36: directions.up,
+    38: directions.up,
     37: directions.left,
-    38: directions.right,
+    39: directions.right,
     40: directions.down,
 }
 
