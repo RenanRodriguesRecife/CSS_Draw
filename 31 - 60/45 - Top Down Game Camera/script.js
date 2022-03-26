@@ -20,6 +20,8 @@ const placeCharacter = () => {
          character.setAttribute("facing",held_direction);
     }
     character.setAttribute("walking", held_direction? "true":"false");
+
+    character.style.transform = `translate3d(${x*pixelSize}px,${y*pixelSize}px,0)`;
 }
 
 //game loop
@@ -31,3 +33,9 @@ const step = () =>{
 }
 step();//primeiro passo
 
+const directions = {
+    up: "up",
+    down: "down",
+    left: "left",
+    right: "right",
+}
