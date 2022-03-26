@@ -47,3 +47,17 @@ const keys = {
     40: directions.down,
 }
 
+document.addEventListener("keydown",(e)=>{
+    var dir = keys[e.which];
+    if(dir && held_directions.indexOf(dir)== -1){
+        held_directions.unshift(dir)
+    }
+})
+
+document.addEventListener("keyup",(e)=>{
+    var dir = keys[e.which];
+    var index = held_directions.indexOf(dir);
+    if(index > -1){
+        held_directions.splice(index,1)   
+    }
+})
