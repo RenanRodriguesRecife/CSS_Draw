@@ -21,6 +21,9 @@ const placeCharacter = () => {
     }
     character.setAttribute("walking", held_direction? "true":"false");
 
+    map.style.transform = `translate3d( ${-x*pixelSize}px, ${-y*pixelSize}px, 0 )`;  
+    console.log(pixelSize)
+
     character.style.transform = `translate3d( ${x*pixelSize}px, ${y*pixelSize}px, 0 )`;  
     console.log(pixelSize)
 }
