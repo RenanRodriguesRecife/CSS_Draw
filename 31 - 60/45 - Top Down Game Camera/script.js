@@ -9,7 +9,7 @@ var held_directions = []; //Estado botão da seta que está segurando
 var speed = 1; 
 
 const placeCharacter = () => {
-    var pixelSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--pixelSize'));
+    var pixelSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--pixel-size'));
 
     const held_direction = held_directions[0];
     if(held_direction){
@@ -21,8 +21,10 @@ const placeCharacter = () => {
     }
     character.setAttribute("walking", held_direction? "true":"false");
 
-    character.style.transform = `translate3d(${x*pixelSize}px,${y*pixelSize}px,0)`;
+    character.style.transform = `translate3d( ${x*pixelSize}px, ${y*pixelSize}px, 0 )`;  
+    console.log(pixelSize)
 }
+
 
 //game loop
 const step = () =>{
