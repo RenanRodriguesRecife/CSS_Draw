@@ -47,3 +47,23 @@ section {
     border-radius: 50%;
     position: absolute;
 }
+
+.ball::before{
+    background-image:linear-gradient(to right, 
+                    #ff3050 30%,
+                    #963050 85%);
+            clip-path: polygon(0% 0%,
+                    100% 0%,
+                    100% 45%,
+                    0% 45%);
+}
+
+.ball::after{
+    background-image: linear-gradient(to right,
+                    #ffffff 30%,
+                    #898989 85%);
+                clip-path: polygon(0% 55%,
+                    100% 55%,
+                    100% 100%,
+                    0% 100%);
+}
