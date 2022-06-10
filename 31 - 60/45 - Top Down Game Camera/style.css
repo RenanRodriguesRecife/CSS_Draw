@@ -32,7 +32,7 @@ body{
     }
 }
 
-.pixel-art{
+.pixelart{
     image-rendering: pixelated;
 }
 
@@ -59,7 +59,7 @@ body{
     height: calc(var(--grid-cell)*2);
     position: absolute;
     overflow: hidden;
-    
+
 }
 
 .shadow{
@@ -70,7 +70,7 @@ body{
     top: 0;
     background:url('assets/DemoRpgCharacterShadow.png') no-repeat no-repeat;
     background-size: 100%;
-   
+
 }
 
 .character_spritesheet{
