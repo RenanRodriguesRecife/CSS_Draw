@@ -9,3 +9,27 @@
     position: relative;
     overflow:hidden;
 }
+
+.runway{
+    height: 400px;
+    width: 100%;
+    background-image: url(./img/runway.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.plane{
+    width: 500px;
+    position: absolute;
+    bottom: 150px;
+    right: -250px;
+    animation: plane 5s linear  infinite;
+    transform-origin: 100% 50%;
+}
+
+@keyframes plane {
+    10%{ transform: translateX(0px) translateY(0px) rotate(0deg);}
+    40%{ transform: translateX(-600px) translateY(0px) rotate(0deg);}
+    100%{ transform: translateX(-2000px) translateY(-300px) rotate(30deg);}
+}
